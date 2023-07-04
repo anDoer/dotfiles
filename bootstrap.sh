@@ -15,7 +15,6 @@ print_header Bootstrap
 
 ask_for_sudo
 
-print_running_inline "Installing git"
 package_install git
 
 ./system/main.sh
