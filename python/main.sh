@@ -21,15 +21,13 @@ pip_install() {
     eval_cmd "$name" "pip install --upgrade $1"
 }
 
-eval_cmd "Update system pip packages" "/usr/bin/pip3 list --outdated --format=freeze | xargs -n1 /usr/bin/pip3 install --upgrade"
-
 pip_install pip
 pip_install virtualenv
 
 make_dir "$PYTHON_VENV"
 
-download "Miniconda" "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh"
-eval_cmd "Install Miniconda" "Miniconda3-latest-Linux-x86_64.sh -b -u -p $CONDA_HOME"
+download "Miniconda" "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh miniconda_installer.sh"
+eval_cmd "Install Miniconda" "miniconda_installer.sh -b -u -p $CONDA_HOME"
 eval_cmd "Initializing Miniconda" "source $CONDA_HOME/bin/activate && conda init bash"
 
 
