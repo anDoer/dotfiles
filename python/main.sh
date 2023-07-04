@@ -21,7 +21,7 @@ pip_install() {
     eval_cmd "$name" "pip install --upgrade $1"
 }
 
-eval_cmd "Update system pip packages" "/usr/local/bin/pip3 list --outdated --format=freeze | xargs -n1 /usr/local/bin/pip3 install --upgrade"
+eval_cmd "Update system pip packages" "/usr/bin/pip3 list --outdated --format=freeze | xargs -n1 /usr/local/bin/pip3 install --upgrade"
 
 pip_install pip
 pip_install virtualenv
