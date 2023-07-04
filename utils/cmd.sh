@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. ./utils/echo.sh
+. ./utils/echos.sh
 
 cmd_exists() {
   command -v "$1" > /dev/null 2>&1
