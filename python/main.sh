@@ -27,7 +27,7 @@ pip_install virtualenv
 make_dir "$PYTHON_VENV"
 
 download "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh" "miniconda_installer.sh"
-eval_cmd "Install Miniconda" "miniconda_installer.sh -b -u -p $CONDA_HOME"
+eval_cmd "Install Miniconda" "bash ./miniconda_installer.sh -b -u -p $CONDA_HOME"
 eval_cmd "Initializing Miniconda" "source $CONDA_HOME/bin/activate && conda init bash"
 
 
