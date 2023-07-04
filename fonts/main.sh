@@ -16,7 +16,7 @@ print_header Fonts
 font_dir="$HOME/.fonts"
 filename="fonts"
 
-eval_cmd "wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/UbuntuMono.zip"
+eval_cmd "Download Font" "wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/UbuntuMono.zip"
 extract_zip UbuntuMono.zip $HOME/.fonts/
 remove UbuntuMono.zip
 
