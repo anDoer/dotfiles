@@ -23,5 +23,6 @@ package_install git
 ./python/main.sh
 ./tmux/main.sh
 ./neovim/main.sh
+./docker/main.sh
 
 
