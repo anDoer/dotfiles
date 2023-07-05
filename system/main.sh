@@ -9,12 +9,9 @@ source ./utils/cmd.sh
 print_header System
 
 #package_update
-
 package_install wget
 package_install curl
 package_install unzip
-package_install nodejs
-package_install npm
 
 package_install ripgrep
 
