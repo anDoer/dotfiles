@@ -25,5 +25,4 @@ cd vim_dev
 chmod +x install.sh
 eval_cmd "Installing Neovim Env..." "./install.sh"
 cd ..
-remove vim-dev
-
+rm -rf vim-dev
