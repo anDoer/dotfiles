@@ -17,10 +17,11 @@ ask_for_sudo
 
 package_install git
 
-##./system/main.sh
-##./ssh/main.sh
-##./fonts/main.sh
+./system/main.sh
+./ssh/main.sh
+./fonts/main.sh
 ./python/main.sh
 ./tmux/main.sh
+./neovim/main.sh
 
 
