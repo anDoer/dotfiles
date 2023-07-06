@@ -20,6 +20,7 @@ eval_cmd "Set source" "echo deb http://dl.google.com/linux/chrome/deb/ stable ma
 apt_update_sources
 apt_install google-chrome-stable
 
-cp system/.pathrc "$HOME/.pathrc"
+cp system/pathrc "$HOME/.pathrc"
+cp system/bash_aliases "$HOME/.bash_aliases"
 
 
