@@ -11,17 +11,12 @@ source ./utils/download.sh
 source ./utils/remove.sh
 source ./utils/extract.sh
 
-print_header Bootstrap
+print_header Setup User
 
-ask_for_sudo
+USER=$(whoami)
 
-package_install git
-
-./system/main.sh
-./ssh/main.sh
-./python/main.sh
-./tmux/main.sh
-./neovim/main.sh
-./docker/main.sh
-
-
+./system/user.sh
+./fonts/user.sh
+./python/user.sh
+./neovim/user.sh
+./obsidian/user.sh
