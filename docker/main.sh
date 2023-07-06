@@ -29,6 +29,6 @@ apt_update_sources
 package_install "docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin"
 
 USER=$(whoami)
-eval_cmd "Add $USER to docker group" "sudo usermod -aG $USER docker"
+eval_cmd "Add $USER to docker group" "sudo usermod -aG docker $USER"
 
 
