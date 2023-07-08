@@ -9,6 +9,6 @@ make_dir() {
 
 sudo_make_dir() {
   name="Create directory $(basename "$1")"
-  eval_cmd "$name" "sudo mkdir -p $1"
+  eval_cmd "$name" "sudo -E mkdir -p $1"
 }
 

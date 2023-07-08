@@ -14,6 +14,6 @@ source ./utils/extract.sh
 print_header Installing Obsidian
 
 
-mkdir "$DOTFILES_BIN"
-download "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.3.5/Obsidian-1.3.5.AppImage" "Obsidian.AppImage"
+mkdir -p "$DOTFILES_BIN"
+download "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.3.5/Obsidian-1.3.5.AppImage" "$DOTFILES_BIN/Obsidian.AppImage"
 eval_cmd "Chmod" "chmod +x $DOTFILES_BIN/Obsidian.AppImage"
