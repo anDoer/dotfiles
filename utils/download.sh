@@ -10,5 +10,5 @@ download() {
     package_install curl
   fi
 
-  eval_cmd "$name" "curl -o $2 $1"
+  eval_cmd "$name" "curl -LO -o $2 $1"
 }
