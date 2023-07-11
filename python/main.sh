@@ -15,14 +15,8 @@ print_header Python
 
 package_install python3
 package_install python3-pip
+package_install python3-venv
 
-pip_install() {
-    name="Install $1"
-    eval_cmd "$name" "pip install --upgrade $1"
-}
-
-pip_install pip
-pip_install virtualenv
 
 
 
